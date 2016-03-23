@@ -9,6 +9,7 @@ import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import org.xutils.x;
 
 public class BaseApplication extends Application {
 
@@ -17,6 +18,8 @@ public class BaseApplication extends Application {
         super.onCreate();
 
         initImageLoader(this);
+        x.Ext.init(this);
+        x.Ext.setDebug(BuildConfig.DEBUG);
     }
 
     // 初始化图片处理
@@ -34,5 +37,6 @@ public class BaseApplication extends Application {
                 .build();
         // Initialize ImageLoader with configuration.
         ImageLoader.getInstance().init(config);
+
     }
 }

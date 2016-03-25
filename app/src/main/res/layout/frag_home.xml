@@ -6,16 +6,10 @@
     android:orientation="vertical" >
     <include layout="@layout/include_titlebar"/>
 
-<GridView
-    android:id="@+id/home_nav_sort"
+<ListView
+    android:id="@+id/news_important_lv"
     android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:numColumns="3"
-    android:scrollbars="none"
-    android:padding="5dp"
-    android:background="@color/white">
-
-</GridView>
+    android:layout_height="match_parent"
+    android:listSelector="@drawable/listview_item_bg"/>
 
 </LinearLayout>

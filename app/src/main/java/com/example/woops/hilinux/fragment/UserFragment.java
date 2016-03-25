@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.woops.hilinux.BaseFragment;
 import com.example.woops.hilinux.R;
 import com.example.woops.hilinux.adapter.UserItemAdapter;
 import com.example.woops.hilinux.entity.User;

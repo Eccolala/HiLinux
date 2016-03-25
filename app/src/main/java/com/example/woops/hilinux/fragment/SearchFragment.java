@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.woops.hilinux.BaseFragment;
 import com.example.woops.hilinux.R;
 
 public class SearchFragment extends BaseFragment {

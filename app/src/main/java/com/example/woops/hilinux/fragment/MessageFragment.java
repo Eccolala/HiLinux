@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.woops.hilinux.BaseFragment;
 import com.example.woops.hilinux.R;
 import com.example.woops.hilinux.util.TitleBuilder;
 import com.example.woops.hilinux.util.ToastUtils;

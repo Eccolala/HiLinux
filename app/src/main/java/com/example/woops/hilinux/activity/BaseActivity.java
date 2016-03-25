@@ -1,4 +1,4 @@
-package com.example.woops.hilinux;
+package com.example.woops.hilinux.activity;
 
 
 import android.app.Activity;
@@ -8,6 +8,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.woops.hilinux.BaseApplication;
 import com.example.woops.hilinux.constants.CommonConstants;
 import com.example.woops.hilinux.util.Logger;
 import com.example.woops.hilinux.util.ToastUtils;

@@ -13,9 +13,7 @@ import org.xutils.x;
 
 import java.util.List;
 
-/**
- * Created by woops on 16-3-24.
- */
+
 public class NewsItemAdapter extends SimpleBaseAdapter<NewsItem> {
 
     public NewsItemAdapter(Context context, List<NewsItem> datas) {
@@ -34,7 +32,7 @@ public class NewsItemAdapter extends SimpleBaseAdapter<NewsItem> {
         }else {
             entityHolder = (EntityHolder) convertView.getTag();
         }
-        entityHolder.item_tv_title.setText(datas.get(position).getContent());
+        entityHolder.item_tv_title.setText(datas.get(position).getDesc());
 
         return convertView;
     }

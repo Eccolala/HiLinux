@@ -23,11 +23,16 @@ public class MyFragmentController {
         return controller;
     }
 
+    public static void onDestroy() {
+        controller = null;
+    }
+
     private MyFragmentController(FragmentActivity activity, int containerId) {
         this.containerId = containerId;
         fm = activity.getSupportFragmentManager();
         initFragment();
     }
+
     private void initFragment() {
         fragments = new ArrayList<Fragment>();
         fragments.add(new HomeFragment());
@@ -36,7 +41,7 @@ public class MyFragmentController {
         fragments.add(new UserFragment());
 
         FragmentTransaction ft = fm.beginTransaction();
-        for(Fragment fragment : fragments) {
+        for (Fragment fragment : fragments) {
             ft.add(containerId, fragment);
         }
         ft.commit();
@@ -52,8 +57,8 @@ public class MyFragmentController {
 
     public void hideFragments() {
         FragmentTransaction ft = fm.beginTransaction();
-        for(Fragment fragment : fragments) {
-            if(fragment != null) {
+        for (Fragment fragment : fragments) {
+            if (fragment != null) {
                 ft.hide(fragment);
             }
         }

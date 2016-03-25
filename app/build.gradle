@@ -27,6 +27,7 @@ dependencies {
     compile 'org.xutils:xutils:3.3.22'
     compile 'com.zhy:okhttputils:2.3.8'
     compile 'com.zhy:flowlayout-lib:1.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
     compile files('libs/universal-image-loader-1.9.5.jar')
     compile files('libs/fastjson-1.2.8.jar')
 }

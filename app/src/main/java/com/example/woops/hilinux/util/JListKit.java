@@ -3,6 +3,7 @@ package com.example.woops.hilinux.util;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.woops.hilinux.entity.CarLogo;
 import com.example.woops.hilinux.entity.NewsItem;
 
 import java.util.ArrayList;
@@ -21,6 +22,11 @@ public class JListKit {
     public static List<NewsItem> newArrayLists() {
 
         List<NewsItem> list = new ArrayList<NewsItem>();
+        return list;
+    }
+    public static List<CarLogo> newArrayListsCar() {
+
+        List<CarLogo> list = new ArrayList<CarLogo>();
         return list;
     }
 

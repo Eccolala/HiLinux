@@ -5,49 +5,12 @@
     android:background="@color/bg_gray"
     android:orientation="vertical">
 
+    <include layout="@layout/include_titlebar"/>
 
-
-    <LinearLayout
+    <com.example.woops.hilinux.widegt.PinnedHeaderListView
+        android:id="@+id/find_brand_lv"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:id="@+id/fragment_find_llyt_switch"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/fragment_find_tv_brand"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:text="按菜系口味查找"
-                android:textColor="#FFFFFF"
-                android:background="#da710f"/>
-            <TextView
-                android:id="@+id/fragment_find_tv_filter"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:text="按菜名查找"
-                android:textColor="#FFFFFF"
-                android:background="#da710f"/>
-        </LinearLayout>
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/fragment_find_flyt_content"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-    </FrameLayout>
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/listview_item_bg">
+    </com.example.woops.hilinux.widegt.PinnedHeaderListView>
 </LinearLayout>
